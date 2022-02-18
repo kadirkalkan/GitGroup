@@ -16,5 +16,14 @@ namespace GitGroup
         {
             InitializeComponent();
         }
+
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            listView1.Items.Add("Hocam cugara biz de icek");
+
+
+        }
+
     }
 }

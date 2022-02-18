@@ -16,5 +16,24 @@ namespace GitGroup
         {
             InitializeComponent();
         }
+
+        private void btnForm_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            Form frm = default;
+            switch (btn.Tag.ToString())
+            {
+                case "oguz":
+                    frm = new FrmOguz();
+                    break;
+                case "ugur":
+                    frm = new FrmUgur();
+                    break;
+                case "sinan":
+                    frm = new FrmSinan();
+                    break;
+            }
+            frm.ShowDialog();
+        }
     }
 }
